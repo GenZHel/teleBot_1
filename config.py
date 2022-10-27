@@ -1,5 +1,5 @@
 
-TOKEN = "5751381129:AAFAcfYL6iAGZjK7hnSYUe74cqGkpzggTSo"
+TOKEN = "5omenumberT0ken"
 
 keys = {
     'доллар': 'USD',
