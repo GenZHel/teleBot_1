@@ -9,7 +9,7 @@ class ConvertionException(Exception):
 
 class ValueConverter:
     @staticmethod
-    def convert(quote: str, base: str, amount: float):
+    def get_price(quote: str, base: str, amount: float):
 
         if quote == base:
             raise ConvertionException(f'Невозможно перевести "{quote}" в "{base}"!')
