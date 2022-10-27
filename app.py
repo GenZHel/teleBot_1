@@ -31,7 +31,7 @@ def get_price(message: telebot.types.Message):
         if len(values_) != 3:
             raise ConvertionException('Неправильное количество параметров!')
         quote, base, amount = values_
-        price = ValueConverter.convert(quote, base, amount)
+        price = ValueConverter.get_price(quote, base, amount)
     except ConvertionException as e:
         bot.reply_to(message, f'Ошибка пользователя: \n{e}')
     except Exception as e:
